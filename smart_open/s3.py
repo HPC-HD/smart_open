@@ -560,7 +560,7 @@ class Reader(io.BufferedIOBase):
             key,
             self._version_id,
         )
-        self._current_pos = 0
+        self._current_pos = -1
         self._buffer = smart_open.bytebuffer.ByteBuffer(buffer_size)
         self._eof = False
         self._line_terminator = line_terminator
